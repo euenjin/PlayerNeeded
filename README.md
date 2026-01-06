@@ -9,61 +9,59 @@ Although limited to the Mets roster, the same framework can be extended to other
 ---
 
 ## Methodology
-- **Data:** 19 Mets hitters (latest season)
-- **Tools:** Python (`pandas`, `NumPy`, `scikit-learn`, `matplotlib`, `seaborn`, `xgboost`)
-- **Models:** Linear Regression, Ridge, Random Forest, XGBoost
-- **Goal:** Predict player salaries based on performance metrics and identify over- or under-valued players.
+- **Data:** 19 Mets hitters (latest season)  
+- **Tools:** Python (`pandas`, `NumPy`, `scikit-learn`, `matplotlib`, `seaborn`, `xgboost`)  
+- **Models:** Linear Regression, Ridge, Random Forest, XGBoost  
+- **Goal:** Predict player salaries based on performance metrics and identify over- or under-valued players  
 
 ---
 
 ## Key Findings and Actionable Insights
 
-### 1️. Performance Analysis
+### 1. Performance Analysis
 - **WAR vs OPS+ correlation:** r = 0.82  
-- **Outfielders** recorded the highest average WAR (2.8), followed by **Infielders** (2.3)  
-- **Peak performance age:** 26 – 29 (average WAR ≈ 2.5)  
-- **Contact Rate** had ~15 % stronger impact on performance than **Power Speed**
+- **Outfielders** recorded the highest average WAR, followed by **Infielders**  
+- **Peak performance age range:** mid-to-late 20s  
+- **Contact Rate** showed stronger contribution to performance than Power Speed metrics  
+
+---
 
 ### 2. Salary Efficiency Findings
-- Average **$ 4.2 M per WAR** across all positions  
-- Identified **$ 45.2 M** in potential salary optimization opportunities  
-- **Younger players (23 – 25)** offered best value; **veterans (32 +)** 40 % less efficient  
-- **Outfielders** showed largest salary variance (σ = $ 5.8 M)
+- **Total roster cost:** $205.83M  
+- **Identified inefficient spending:** $92.17M  
+- **Optimization opportunities identified:** 5  
+- **Potential salary savings:** $52.35M through targeted roster optimization  
 
-### 3️. Position-Specific Insights
-| Position | Salary/WAR | Observation |
-|-----------|-------------|--------------|
-| **C** | Low variance, stable WAR | Reliable performance |
-| **IF** | **$ 3.8 M / WAR** | Best efficiency |
-| **OF** | $ 12.4 M avg salary | High potential but volatile |
-| **DH** | **$ 5.6 M / WAR** | Least efficient |
+---
 
-### 4️. Age-Value Analysis
-- **Peak salary efficiency age:** 26 → $ 3.2 M per WAR  
-- **Early prime (25 – 27)** = best performance / salary ratio  
-- **Rookies (≤ 25)** show ~2.1× better ROI than veterans  
-- **Veterans (32 +)** ≈ 40 % higher $/WAR than team average  
+### 3. Position-Specific Insights
+| Position | Optimization Insight |
+|--------|----------------------|
+| **OF** | Moderate cost reduction with strong WAR upside |
+| **IF** | Largest source of salary inefficiency |
+| **C** | Stable performance with limited but positive savings |
 
-### 5️. Optimization Opportunities
-- **Total potential savings:** $ 45.2 M (≈ 18 % of Mets payroll)  
-- **Projected performance gain:** +3.2 team WAR  
+---
+
+### 4. Optimization Opportunities
+- **Total potential savings:** $52.35M  
+- **Projected performance gain:** +2.90 team WAR  
 - **By position:**  
-  - OF → $ 18.5 M savings  
-  - IF → $ 15.3 M  
-  - C → $ 6.8 M  
-  - DH → $ 4.6 M  
+  - **Outfield (OF):** $7.34M savings, +1.40 WAR  
+  - **Infield (IF):** $44.30M savings, +0.80 WAR  
+  - **Catcher (C):** $0.70M savings, +0.70 WAR  
 
 ---
 
 ## Takeaway
-Data-driven salary modeling for **New York Mets hitters** reveals clear opportunities to improve payroll efficiency while maintaining team performance.  
-By integrating advanced metrics (WAR, OPS+, OBP) into salary prediction, front-office decisions can become more objective, measurable, and cost-effective.
+Data-driven salary modeling for **New York Mets hitters** reveals clear opportunities to **reduce payroll while improving on-field performance**.  
+By integrating advanced metrics such as **WAR and OPS+** into machine learning–based salary prediction, this analysis demonstrates how front-office decisions can become more objective, measurable, and cost-effective.
 
 ---
 
-##  Code & Notebook
+## Code & Notebook
 Full implementation is available in [`batter_analysis.ipynb`](./batter_analysis.ipynb), including:
 - Data preprocessing and feature engineering  
 - Model training (Random Forest, XGBoost)  
-- Feature importance visualization  
-- Over-/under-valued player identification  
+- Feature importance analysis  
+- Over- and under-valued player identification  
