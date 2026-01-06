@@ -44,12 +44,11 @@ Although limited to the Mets roster, the same framework can be extended to other
 ---
 
 ### 4. Optimization Opportunities
-- **Total potential savings:** $52.35M  
-- **Projected performance gain:** +2.90 team WAR  
-- **By position:**  
-  - **Outfield (OF):** $7.34M savings, +1.40 WAR  
-  - **Infield (IF):** $44.30M savings, +0.80 WAR  
-  - **Catcher (C):** $0.70M savings, +0.70 WAR  
+- Identified **$52.35M in potential salary savings** with a **+2.90 projected WAR improvement**
+- Proposed **position-specific replacements** that reduce payroll while improving performance:
+  - **OF:** Cedric Mullins → Tyrone Taylor (**$7.34M savings, +1.40 WAR**)
+  - **IF:** Pete Alonso → Brett Baty (**$44.30M savings, +0.80 WAR**)
+  - **C:** Luis Torrens → Francisco Álvarez (**$0.70M savings, +0.70 WAR**
 
 ---
 
